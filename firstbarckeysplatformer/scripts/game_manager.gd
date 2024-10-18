@@ -1,0 +1,12 @@
+extends Node
+
+var score = 0
+var alter_life=3
+@onready var score_label: Label = %ScoreLabel
+
+func add_point():
+	score +=1
+	score_label.text = "Score: 25 / " + str(score)
+
+func remove_life():
+	print("ouxh")
